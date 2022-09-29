@@ -106,7 +106,7 @@ button:hover {
           box-shadow: 0px 0px 10px hsl(211deg, 68%, 94%);
   position: relative;
 }
-@media (max-width: 424px) {
+@media (max-width: 500px) {
   .notification__body {
     margin: 0;
     border-radius: 0;
