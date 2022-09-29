@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 body {
-  background-color: #f9fafe;
+  background-color: hsl(210deg, 60%, 98%);
   font-family: "Plus Jakarta Sans";
   font-size: 16px;
 }
@@ -90,15 +90,15 @@ button {
   background-color: transparent;
 }
 button:hover {
-  color: #0e367b;
+  color: hsl(219deg, 85%, 26%);
 }
 
 .notification__body {
   margin: 30px 0px 30px 0;
   background-color: #ffffff;
   border-radius: 20px;
-  -webkit-box-shadow: 0px 0px 10px rgb(232, 237, 243);
-          box-shadow: 0px 0px 10px rgb(232, 237, 243);
+  -webkit-box-shadow: 0px 0px 10px hsl(211deg, 68%, 94%);
+          box-shadow: 0px 0px 10px hsl(211deg, 68%, 94%);
 }
 .notification__header {
   padding: 40px 30px 0px 30px;
@@ -127,7 +127,7 @@ button:hover {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  background-color: #0c3575;
+  background-color: hsl(219deg, 85%, 26%);
   color: #fff;
   font-size: 18px;
   border-radius: 5px;
@@ -152,24 +152,23 @@ button:hover {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  color: #616770;
+  color: hsl(219deg, 12%, 42%);
   line-height: 131%;
   font-weight: 500;
 }
 .notification__answer {
   margin-left: 115px;
-  color: #5f6975;
+  color: hsl(219deg, 12%, 42%);
   padding: 21px;
   border-radius: 10px;
   line-height: 131%;
   font-weight: 500;
   width: 565px;
-  -webkit-box-shadow: 0px 0px 10px rgb(232, 237, 243);
-          box-shadow: 0px 0px 10px rgb(232, 237, 243);
+  border: 1px solid hsl(205deg, 33%, 90%);
 }
 .notification__answer:hover {
   cursor: pointer;
-  background-color: #e5eff9;
+  background-color: hsl(211deg, 68%, 94%);
 }
 
 .unread::before {
@@ -177,15 +176,15 @@ button:hover {
   display: inline-block;
   width: 8px;
   height: 8px;
-  background-color: #ff5453;
+  background-color: hsl(1deg, 90%, 64%);
   border-radius: 50%;
   margin: 0 5px;
 }
 
 .unread-item {
-  background-color: #f6fafd;
-  -webkit-box-shadow: 0px 0px 10px rgb(232, 237, 243);
-          box-shadow: 0px 0px 10px rgb(232, 237, 243);
+  background-color: hsl(210deg, 60%, 98%);
+  -webkit-box-shadow: 0px 0px 10px hsl(211deg, 68%, 94%);
+          box-shadow: 0px 0px 10px hsl(211deg, 68%, 94%);
 }
 
 .notification-item__box {
@@ -209,7 +208,7 @@ button:hover {
   color: #000000;
 }
 .notification-item__name:hover {
-  color: #0e367b;
+  color: hsl(219deg, 85%, 26%);
   cursor: pointer;
 }
 .notification-item__action {
@@ -224,7 +223,7 @@ button:hover {
   font-weight: 600;
 }
 .notification-item__object:hover {
-  color: #0e367b;
+  color: hsl(219deg, 85%, 26%);
   cursor: pointer;
 }
 .notification-item__time {
@@ -256,8 +255,6 @@ button:hover {
   display: -ms-flexbox;
   display: flex;
   margin: 20px 30px;
-  -webkit-box-shadow: 0px 0px 10px rgb(247, 248, 252);
-          box-shadow: 0px 0px 10px rgb(247, 248, 252);
   border-radius: 10px;
   color: #616B77;
 }
@@ -282,11 +279,11 @@ button:hover {
   color: #000000;
 }
 .notification-item-pic__name:hover {
-  color: #0e367b;
+  color: hsl(219deg, 85%, 26%);
   cursor: pointer;
 }
 .notification-item-pic__action {
-  color: #616770;
+  color: hsl(219deg, 12%, 42%);
   line-height: 131%;
   font-weight: 500;
 }
@@ -297,7 +294,7 @@ button:hover {
   font-weight: 600;
 }
 .notification-item-pic__object:hover {
-  color: #0e367b;
+  color: hsl(219deg, 85%, 26%);
   cursor: pointer;
 }
 .notification-item-pic__time {
