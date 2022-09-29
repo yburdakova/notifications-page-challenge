@@ -99,6 +99,7 @@ button:hover {
 }
 
 .notification__body {
+  margin-top: 40px;
   background-color: #ffffff;
   border-radius: 20px;
   -webkit-box-shadow: 0px 0px 10px hsl(211deg, 68%, 94%);
