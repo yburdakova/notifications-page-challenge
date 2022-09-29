@@ -45,8 +45,9 @@ body{
     
 }
 .container {
-        max-width: 727px;
+        max-width: 730px;
         margin: 0 auto;
+        padding-bottom: 105px;
 }
 
 button{
@@ -60,22 +61,27 @@ button{
 
 .notification {
 
-    &__list {
-        margin: 30px 0px 63px 0;
+    &__body {
+        margin: 30px 0px 30px 0;
         background-color:#ffffff;
-        border-radius: 20px;
+        border-radius: 20px;        
+        box-shadow: 0px 0px 10px rgb(232, 237, 243);
     }
 
     &__header {
         padding: 40px 30px 0px 30px;
         display: flex;
         justify-content: space-between;
+        margin-bottom: 40px;
     }
 
     &__title {
         flex: 0 0 auto;
         font-size: 22px;
         font-weight: 700;
+        display: flex;
+        align-items: flex-end;
+        
     }
 
     &__counter {
@@ -84,10 +90,12 @@ button{
         color: #fff;
         font-size: 18px;
         border-radius: 5px;
-        padding: 5px 10px;
+        padding: 3px 10px;
+        margin-top: 2px;
         margin: 0 10px;
         font-weight: 600;
-
+        display: flex;
+        align-items: flex-end;
     }
 
     &__clear {
@@ -100,14 +108,18 @@ button{
     }
 
     &__answer {
-        background-color: #e5eff9;
+        margin-left: 115px;
         color: #5f6975;
         padding: 21px;
         border-radius: 10px;
         line-height: 131%;
         font-weight: 500;
         width: 565px;
-        justify-content:right;
+        box-shadow: 0px 0px 10px rgb(232, 237, 243);
+        &:hover{
+            cursor: pointer;
+            background-color: #e5eff9;
+        }
     }
 }
 .unread{
@@ -123,20 +135,19 @@ button{
 }
 .unread-item{
     background-color: #f6fafd;
+    box-shadow: 0px 0px 10px rgb(232, 237, 243);
 
 }
 .notification-item {
 
     &__box {
         display: flex;
-        margin: 30px;
-        box-shadow: 0px 0px 10px rgb(247, 248, 252);
+        margin: 20px 30px;
         border-radius: 10px;
         color: #616B77;
     }
 
     &__avatar {
-        flex: 0 0 auto;
         img{
            width: 45px;
            margin: 18px;
@@ -144,12 +155,11 @@ button{
     }
 
     &__text {
-        flex: 1 0 auto;
         margin: 18px 18px 18px 0;
-        
     }
 
     &__string {
+
     }
 
     &__name {
@@ -190,9 +200,87 @@ button{
     }
 
     &__userpicture {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        img{
+            width: 45px;
+            border: 2px solid#fff;
+            border-radius: 5px;
+            
+            &:hover{
+                border: 2px solid#e4ebf1;
+                cursor: pointer;
+            }
+            
+        }
+    }
+}
+.notification-item-pic {
+
+    &__box {
+        display: flex;
+        margin: 20px 30px;
+        box-shadow: 0px 0px 10px rgb(247, 248, 252);
+        border-radius: 10px;
+        color: #616B77;
+    }
+
+    &__avatar {
+        flex: 0 0 auto;
+        img{
+           width: 45px;
+           margin: 18px;
+        }
+    }
+
+    &__text {
+        flex: 1 0 auto;
+        margin: 18px 18px 18px 0;
+    }
+
+    &__name {
+        font-weight: 700;
+        line-height: 131%;
+        color: #000000;
+        &:hover{
+            color: #0e367b;
+            cursor: pointer;
+        }
+    }
+
+    &__action {
+        color: #616770;
+        line-height: 131%;
+        font-weight: 500;
+    }
+
+    &__object {
+        font-weight: 700;
+        color: #5d616c;
+        line-height: 131%;
+        font-weight: 600;
+        &:hover{
+            color: #0e367b;
+            cursor: pointer;
+        }
+    }
+
+    &__unread {
+    }
+
+    &__time {
+        color: #9aa1ab;
+        margin-top: 10px;
+        font-weight: 500;
+    }
+
+    &__userpicture {
         flex: 0 0 auto;
         display: flex;
         align-items: center;
+        margin-right: 20px;
 
         img{
             width: 45px;

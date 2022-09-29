@@ -79,8 +79,9 @@ body {
 }
 
 .container {
-  max-width: 727px;
+  max-width: 730px;
   margin: 0 auto;
+  padding-bottom: 105px;
 }
 
 button {
@@ -92,10 +93,12 @@ button:hover {
   color: #0e367b;
 }
 
-.notification__list {
-  margin: 30px 0px 63px 0;
+.notification__body {
+  margin: 30px 0px 30px 0;
   background-color: #ffffff;
   border-radius: 20px;
+  -webkit-box-shadow: 0px 0px 10px rgb(232, 237, 243);
+          box-shadow: 0px 0px 10px rgb(232, 237, 243);
 }
 .notification__header {
   padding: 40px 30px 0px 30px;
@@ -105,6 +108,7 @@ button:hover {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 40px;
 }
 .notification__title {
   -webkit-box-flex: 0;
@@ -112,6 +116,12 @@ button:hover {
           flex: 0 0 auto;
   font-size: 22px;
   font-weight: 700;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .notification__counter {
   -webkit-box-flex: 0;
@@ -121,9 +131,16 @@ button:hover {
   color: #fff;
   font-size: 18px;
   border-radius: 5px;
-  padding: 5px 10px;
+  padding: 3px 10px;
+  margin-top: 2px;
   margin: 0 10px;
   font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
 }
 .notification__clear {
   -webkit-box-flex: 1;
@@ -140,16 +157,19 @@ button:hover {
   font-weight: 500;
 }
 .notification__answer {
-  background-color: #e5eff9;
+  margin-left: 115px;
   color: #5f6975;
   padding: 21px;
   border-radius: 10px;
   line-height: 131%;
   font-weight: 500;
   width: 565px;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
+  -webkit-box-shadow: 0px 0px 10px rgb(232, 237, 243);
+          box-shadow: 0px 0px 10px rgb(232, 237, 243);
+}
+.notification__answer:hover {
+  cursor: pointer;
+  background-color: #e5eff9;
 }
 
 .unread::before {
@@ -164,31 +184,23 @@ button:hover {
 
 .unread-item {
   background-color: #f6fafd;
+  -webkit-box-shadow: 0px 0px 10px rgb(232, 237, 243);
+          box-shadow: 0px 0px 10px rgb(232, 237, 243);
 }
 
 .notification-item__box {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 30px;
-  -webkit-box-shadow: 0px 0px 10px rgb(247, 248, 252);
-          box-shadow: 0px 0px 10px rgb(247, 248, 252);
+  margin: 20px 30px;
   border-radius: 10px;
   color: #616B77;
-}
-.notification-item__avatar {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 auto;
-          flex: 0 0 auto;
 }
 .notification-item__avatar img {
   width: 45px;
   margin: 18px;
 }
 .notification-item__text {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 auto;
-          flex: 1 0 auto;
   margin: 18px 18px 18px 0;
 }
 .notification-item__name {
@@ -221,6 +233,79 @@ button:hover {
   font-weight: 500;
 }
 .notification-item__userpicture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 20px;
+}
+.notification-item__userpicture img {
+  width: 45px;
+  border: 2px solid #fff;
+  border-radius: 5px;
+}
+.notification-item__userpicture img:hover {
+  border: 2px solid #e4ebf1;
+  cursor: pointer;
+}
+
+.notification-item-pic__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px 30px;
+  -webkit-box-shadow: 0px 0px 10px rgb(247, 248, 252);
+          box-shadow: 0px 0px 10px rgb(247, 248, 252);
+  border-radius: 10px;
+  color: #616B77;
+}
+.notification-item-pic__avatar {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+}
+.notification-item-pic__avatar img {
+  width: 45px;
+  margin: 18px;
+}
+.notification-item-pic__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+  margin: 18px 18px 18px 0;
+}
+.notification-item-pic__name {
+  font-weight: 700;
+  line-height: 131%;
+  color: #000000;
+}
+.notification-item-pic__name:hover {
+  color: #0e367b;
+  cursor: pointer;
+}
+.notification-item-pic__action {
+  color: #616770;
+  line-height: 131%;
+  font-weight: 500;
+}
+.notification-item-pic__object {
+  font-weight: 700;
+  color: #5d616c;
+  line-height: 131%;
+  font-weight: 600;
+}
+.notification-item-pic__object:hover {
+  color: #0e367b;
+  cursor: pointer;
+}
+.notification-item-pic__time {
+  color: #9aa1ab;
+  margin-top: 10px;
+  font-weight: 500;
+}
+.notification-item-pic__userpicture {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
@@ -230,13 +315,14 @@ button:hover {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-right: 20px;
 }
-.notification-item__userpicture img {
+.notification-item-pic__userpicture img {
   width: 45px;
   border: 2px solid #fff;
   border-radius: 5px;
 }
-.notification-item__userpicture img:hover {
+.notification-item-pic__userpicture img:hover {
   border: 2px solid #e4ebf1;
   cursor: pointer;
 }
